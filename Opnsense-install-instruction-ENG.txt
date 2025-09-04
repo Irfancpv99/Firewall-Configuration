@@ -1,0 +1,50 @@
+In Google Drive, there are two files:
+
+"Debian"
+"opnsense"
+These two files are in .ova format. With VirtualBox installed,
+simply double-click on the files to open them automatically.
+
+------------------------------------------------------------------------|
++-------------------+         +-------------------+        +----------------------+
+|      Debian       |         |     OPNsense      |        |    host network      |
+|                   |         |                   |        |        card          |
+|    +--------+     |         |    +--------+     |        |                      |
+|    |        |     |         |    |        |     |        |                      |
+|    | intnet |-----|---------|----| intnet |     |    |---|                      |
+|    |        |     |         |    |        |     |    |   |                      |
+|    +--------+     |         |    +--------+     |    |   |                      |
+|                   |         |                   |    |   |                      |
+|                   |         |                   |    |   +----------------------+
++-------------------+         |      NAT          |    |                |
+                              |    +--------+     |    |                |
+
+                              |    |        |     |    |                |
+                              |    |  NAT   |-----|----|                |
+                              |    |        |     |                     |
+                              |    +--------+     |                     |
+                              +-------------------+        host         |
+------------------------------------------------------------------------|
+
+
+After starting the VMs, on the OPNsense VM, you should have two IPv4 addresses, 
+one for the internal network (intnet) and one for the WAN. 
+Note the WAN address (the second one). 
+Open Firefox on the Debian VM and go to the address you wrote down earlier; 
+the OPNsense web page should open.
+
+
+
+For the Debian VM:
+
+Password: changeme
+
+For the OPNsense VM:
+
+Username: root
+Password: opnsense
+
+
+
+
+
