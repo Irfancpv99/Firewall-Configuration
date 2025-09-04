@@ -1,4 +1,4 @@
-# Firewall Configuration Assignment
+# Firewall Configuration 
 
 ## Overview
 This repository contains the documentation and configuration files for Assignment 3 of the **Secure Wireless and Mobile Networks** course (Curriculum: Resilient and Secure Cyber Physical Systems) at Università degli Studi di Firenze.
