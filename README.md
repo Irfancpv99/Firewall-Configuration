@@ -128,8 +128,5 @@ Detailed packet captures are included showing:
 ## License
 This project is for educational purposes as part of university coursework.
 
-## Contact
-For questions or clarifications regarding this assignment, please refer to the course materials or contact the course instructor.
-
 ---
 *This assignment demonstrates practical network security implementation through firewall configuration and provides valuable insights into the relationship between firewalls and network communication.*
